@@ -9,11 +9,11 @@ var app = new Vue({
   data:{
     title: "ToDo List",
     list: [
-      "fare la spesa",
-      "dare da mangiare al cane",
-      "programmare",
-      "mangiare",
-      "dormire",
+     {message:"fare la spesa"},
+     {message:"dare la pappa a Benhur"},
+     {message:"programmare"},
+     {message:"mangiare"},
+     {message:"dormire"}
     ]
   }
 })

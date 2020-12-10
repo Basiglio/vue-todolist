@@ -10,11 +10,7 @@
     <div id="app">
       <h1>{{title}}</h1>
       <ul>
-        <li>{{list[0]}}</li>
-        <li>{{list[1]}}</li>
-        <li>{{list[2]}}</li>
-        <li>{{list[3]}}</li>
-        <li>{{list[4]}}</li>
+        <li v-for="object in list" :key="object.message"> {{object.message}}</li>
       </ul>
     </div>
     <script src="js/myscript.js" charset="utf-8"></script>
