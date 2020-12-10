@@ -4,13 +4,19 @@
     <meta charset="utf-8">
     <!-- COLLEGO VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- COLLEGO CSS -->
+    <link rel="stylesheet" href="style/style.css">
     <title></title>
   </head>
   <body>
     <div id="app">
       <h1>{{title}}</h1>
+      <input type="text" name="" value="">
+      <button type="button" name="button">Aggiungi ToDo</button>
       <ul>
-        <li v-for="object in list" :key="object.message"> {{object.message}}</li>
+        <li
+          v-for="object in list" :key="object.message"> {{object.message}} <span>X</span>
+        </li>
       </ul>
     </div>
     <script src="js/myscript.js" charset="utf-8"></script>
