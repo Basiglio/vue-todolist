@@ -26,7 +26,7 @@ var app = new Vue ({
     // CREO FUNZIONE
     removeFromArray: function () {
       // RIMUOVO DALLA LIST L'OGGETTO
-      this.list.slice(this.item.message);
+      this.list.slice({message:"fare la spesa"});
     },
   }
 })
