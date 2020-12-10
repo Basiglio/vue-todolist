@@ -11,11 +11,13 @@
   <body>
     <div id="app">
       <h1>{{title}}</h1>
-      <input type="text" name="" value="">
+      <!-- IMMETTI NUOVA AZIONE -->
+      <input type="text" placeholder="Scrivi nuovo ToDo" value="">
+      <!-- AL CLICK AGGIUNGI AZIONE AL MIO ARRAY E SVUOTA IL VALUE -->
       <button type="button" name="button">Aggiungi ToDo</button>
       <ul>
         <li
-          v-for="object in list" :key="object.message"> {{object.message}} <span>X</span>
+          v-for="item in list" :key="item.message"> {{item.message}} <span>X</span>
         </li>
       </ul>
     </div>

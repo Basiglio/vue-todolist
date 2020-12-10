@@ -15,5 +15,7 @@ var app = new Vue({
      {message:"mangiare"},
      {message:"dormire"}
     ]
+  },
+  methods: {
   }
 })
