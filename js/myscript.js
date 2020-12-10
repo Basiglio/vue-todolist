@@ -21,7 +21,7 @@ var app = new Vue ({
     // CREO FUNZIONE
     pushInArray: ()=> {
       // PUSHO NELLA LIST L'OGGETTO + VALORE DELL' INPUT
-      this.list.push({message: inputVal});
+      this.list.push({message: "inputVal"});
     }
   }
 })
