@@ -8,20 +8,25 @@ var app = new Vue ({
   el: '#app',
   data:{
     title: "ToDo List",
-    inputVal: "",
     list: [
      {message:"fare la spesa"},
      {message:"dare la pappa al cane"},
      {message:"programmare"},
      {message:"mangiare"},
      {message:"dormire"}
-    ]
+   ],
+    inputVal: "",
   },
   methods: {
     // CREO FUNZIONE
-    pushInArray: ()=> {
+    pushInArray: function () {
       // PUSHO NELLA LIST L'OGGETTO + VALORE DELL' INPUT
-      this.list.push({message: "inputVal"});
-    }
+      this.list.push({message: this.inputVal});
+    },
+    // CREO FUNZIONE
+    removeFromArray: function () {
+      // RIMUOVO DALLA LIST L'OGGETTO
+      this.list.slice(this.item.message);
+    },
   }
 })

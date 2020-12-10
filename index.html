@@ -17,10 +17,9 @@
       <button type="button" @click="pushInArray">Aggiungi ToDo</button>
       <ul>
         <li
-          v-for="item in list" :key="item.message"> {{item.message}} <span>X</span>
+          v-for="item in list" :key="item.message"> {{item.message}} <span @click="removeFromArray">X</span>
         </li>
       </ul>
-      <p>{{inputVal}}</p>
     </div>
     <script src="js/myscript.js" charset="utf-8"></script>
   </body>
