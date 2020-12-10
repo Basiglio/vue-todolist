@@ -22,7 +22,8 @@ var app = new Vue ({
     // CREO FUNZIONE
     pushInArray: function () {
       // PUSHO NELLA LIST L'OGGETTO + VALORE DELL' INPUT
-      this.list.push({message: this.inputVal});
+      this.list.push({message: this.inputVal}),
+      this.inputVal = ""
     },
     // CREO FUNZIONE
     removeFromArray: function (index) {
