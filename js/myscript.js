@@ -8,14 +8,18 @@ var app = new Vue({
   el: '#app',
   data:{
     title: "ToDo List",
+    inputVal: "",
     list: [
      {message:"fare la spesa"},
-     {message:"dare la pappa a Benhur"},
+     {message:"dare la pappa al cane"},
      {message:"programmare"},
      {message:"mangiare"},
      {message:"dormire"}
     ]
   },
   methods: {
+    pushInArray: function() {
+      this.list.push(inputVal)
+    }
   }
 })
