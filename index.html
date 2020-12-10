@@ -16,6 +16,7 @@
       <!-- AL CLICK AGGIUNGI AZIONE AL MIO ARRAY-->
       <button type="button" @click="pushInArray">Aggiungi ToDo</button>
       <ul>
+        <!-- AL CICLO FOR DEVO PASSARE L'OGGETTO NELL'ARRAY E L'INDICE ALTRIMENTI NON POSSO CANCELLARLO -->
         <li
           v-for="(item, index) in list" :key="item.message"> {{item.message}} <span @click="removeFromArray(index)">X</span>
         </li>
