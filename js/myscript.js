@@ -4,7 +4,7 @@
 // - cancellare un item dalla lista, al click sulla relativa icona 'X'.
 
 
-var app = new Vue({
+var app = new Vue ({
   el: '#app',
   data:{
     title: "ToDo List",
@@ -18,8 +18,8 @@ var app = new Vue({
     ]
   },
   methods: {
-    pushInArray: function() {
-      this.list.push(inputVal)
+    pushInArray: ()=> {
+      this.list.push({message: inputVal});
     }
   }
 })

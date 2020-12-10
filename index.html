@@ -12,14 +12,15 @@
     <div id="app">
       <h1>{{title}}</h1>
       <!-- IMMETTI NUOVA AZIONE -->
-      <input type="text" placeholder="Scrivi nuovo ToDo" value="" v-model="inputVal">
+      <input type="text" placeholder="Scrivi nuovo ToDo" v-model="inputVal">
       <!-- AL CLICK AGGIUNGI AZIONE AL MIO ARRAY E SVUOTA IL VALUE -->
-      <button type="button" name="button" @click="pushInArray">Aggiungi ToDo</button>
+      <button type="button" @click="pushInArray">Aggiungi ToDo</button>
       <ul>
         <li
           v-for="item in list" :key="item.message"> {{item.message}} <span>X</span>
         </li>
       </ul>
+      <p>{{inputVal}}</p>
     </div>
     <script src="js/myscript.js" charset="utf-8"></script>
   </body>
